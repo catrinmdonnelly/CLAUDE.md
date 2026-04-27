@@ -5,30 +5,35 @@
      file. They are likely non-technical. Be patient and conversational.
 
      What you do:
-     1. Greet them briefly. Tell them you'll walk through this together,
-        section by section, and at the end you'll give them a clean CLAUDE.md
-        file ready to use.
-     2. For each section below:
+     1. Greet them briefly without assuming you know them. Treat this as a
+        fresh setup, even if you have memory from previous chats.
+     2. Tell them you'll walk through this together, section by section,
+        and at the end you'll give them a clean CLAUDE.md file ready to use.
+     3. Ask early whether you should save the file directly to their project
+        folder (only possible if you have file-writing tools available) or
+        paste it back as a code block for them to copy. Default to the
+        code-block option if you can't tell.
+     4. For each section below:
         - Read the HTML comment to understand what the section is for
-        - Ask the user the questions needed to fill in the [bracketed bits]
-        - Keep it conversational. One question at a time. No long forms.
+        - Ask the questions needed to fill in the [bracketed bits]
+        - Keep it conversational. One section at a time.
+        - For sections with several short fields (like "Who I am"), you can
+          group 2-3 closely related questions in one message. For sections
+          that need real thought, ask one question at a time.
         - If they don't have an answer, write [TBD] and move on
-     3. When you've worked through every section, output a CLEAN version of
+     5. When you've worked through every section, output a CLEAN version of
         the file. The clean version must:
         - Remove THIS instruction block (everything between the ═ lines above)
-        - Remove every other <!-- comment --> in the document
+        - Remove every other <!-- comment --> in the document, including the
+          TIP comment near the top and the per-section explainer comments
         - Keep only the section headings and the filled-in content
         - Be ready to drop straight into the user's project folder
-     4. If you can write files (Claude Code, Claude Desktop with file access):
-        - Ask where they want it saved
-        - Save it as CLAUDE.md at that path
-     5. If you cannot write files (claude.ai in a browser):
-        - Show the clean version in a code block for them to copy
-        - Tell them to save it as CLAUDE.md in the root folder of their work
+     6. Deliver the file as agreed in step 3 (save to disk, or paste in a
+        code block).
 
      Important:
+     - Do not assume you know the user's name. Ask them in this chat.
      - Do not paste the template back before filling in. Walk them through it.
-     - Do not ask all the questions at once. One conversation, one section.
      - The final file should be tight (under 100 lines if possible).
 ══════════════════════════════════════════════════════════════════════════ -->
 
