@@ -14,15 +14,24 @@ This is one of a family of five templates that customise AI for the way you actu
 
 You don't have to do all five. The minimum useful set is **CLAUDE.md + COPY.md**. Add the others as you need them.
 
-They reference each other. CLAUDE.md mentions DESIGN.md and COPY.md via `@-imports` so AI knows to load them when relevant.
+They reference each other. Your CLAUDE.md tells AI to read the others when the relevant work comes up, so you do not have to think about which file is needed when.
 
 ## Why this exists
 
 Without a CLAUDE.md, Claude has to guess who you are. Guessing is where the generic, hedged, slightly American responses come from. Three or four lines of real context, and you get a different assistant.
 
-Karpathy's CLAUDE.md is 65 lines and has shaped how thousands of people work with AI. Anthropic's official guidance: *"For each line, ask: would removing this cause Claude to make mistakes? If not, cut it."*
-
 Most people either don't have a CLAUDE.md, or they have a 500-line one that Claude ignores past line 200. This template is the middle.
+
+## Built on the work of others
+
+This template isn't original. It's a synthesis of ideas from people who have thought hard about working well with AI. If anything in here is good, the credit goes to:
+
+- **[Andrej Karpathy](https://github.com/forrestchang/andrej-karpathy-skills)** for the viral 65-line behavioural rules file (17K+ stars). The "tight is the goal" philosophy is his.
+- **[Anthropic](https://code.claude.com/docs/en/best-practices)** for the official guidance, the "under 100 lines" finding, and the test: *"For each line, ask, would removing this cause Claude to make mistakes? If not, cut it."*
+- **[HumanLayer](https://www.humanlayer.dev/blog/writing-a-good-claude-md)** for the WHAT/WHY/HOW frame and the warning that past 200 instructions, compliance drops fast.
+- **[Garry Tan / gstack](https://github.com/garrytan/gstack)** for the production-grade example showing what strict writing style and commit standards look like.
+
+What's mine is the synthesis: the HTML-comment guided pattern, the conversational walk-through, and the explicit pairing with DESIGN.md, COPY.md, CONTEXT.md, and NORTH-STAR.md as a coherent family.
 
 ## Who it's for
 
