@@ -26,10 +26,10 @@ Most people either don't have a CLAUDE.md, or they have a 500-line one that Clau
 
 This template isn't original. It's a synthesis of ideas from people who have thought hard about working well with AI. If anything in here is good, the credit goes to:
 
-- **[Andrej Karpathy](https://github.com/forrestchang/andrej-karpathy-skills)** for the viral 65-line behavioural rules file (17K+ stars). The "tight is the goal" philosophy is his.
-- **[Anthropic](https://code.claude.com/docs/en/best-practices)** for the official guidance, the "under 100 lines" finding, and the test: *"For each line, ask, would removing this cause Claude to make mistakes? If not, cut it."*
-- **[HumanLayer](https://www.humanlayer.dev/blog/writing-a-good-claude-md)** for the WHAT/WHY/HOW frame and the warning that past 200 instructions, compliance drops fast.
-- **[Garry Tan / gstack](https://github.com/garrytan/gstack)** for the production-grade example showing what strict writing style and commit standards look like.
+- **[Andrej Karpathy's CLAUDE.md](https://github.com/forrestchang/andrej-karpathy-skills/blob/main/CLAUDE.md)** for the viral 65-line behavioural rules file (17K+ stars). The "tight is the goal" philosophy is his.
+- **[Anthropic's Claude Code best practices](https://code.claude.com/docs/en/best-practices)** for the official guidance, the "under 100 lines" finding, and the test: *"For each line, ask, would removing this cause Claude to make mistakes? If not, cut it."*
+- **[HumanLayer's "Writing a good CLAUDE.md"](https://www.humanlayer.dev/blog/writing-a-good-claude-md)** for the WHAT/WHY/HOW frame and the warning that past 200 instructions, compliance drops fast.
+- **[gstack's CLAUDE.md](https://github.com/garrytan/gstack/blob/main/CLAUDE.md)** (by Garry Tan) for the production-grade example showing what strict writing style and commit standards look like.
 
 What's mine is the synthesis: the HTML-comment guided pattern, the conversational walk-through, and the explicit pairing with DESIGN.md, COPY.md, CONTEXT.md, and NORTH-STAR.md as a coherent family.
 
@@ -75,18 +75,6 @@ Either way: if you're using Claude Code, the file is loaded automatically from t
 5. **Use progressive disclosure.** Reference sub-files (`@docs/testing.md`) so the main file stays lean.
 6. **Treat it like code.** Review it when things go wrong. Update it when Claude makes a mistake.
 7. **Hand-craft it.** Don't ship the raw `/init` output. It's a starting point, not a finished file.
-
-## References
-
-The best thinking I found while writing this:
-
-- [Anthropic: Best Practices for Claude Code](https://code.claude.com/docs/en/best-practices): the official guidance
-- [Anthropic: CLAUDE.md / memory](https://code.claude.com/docs/en/memory): file location hierarchy and progressive disclosure
-- [Karpathy's CLAUDE.md](https://github.com/forrestchang/andrej-karpathy-skills/blob/main/CLAUDE.md): the 65-line behavioural file (17K+ stars)
-- [HumanLayer: Writing a good CLAUDE.md](https://www.humanlayer.dev/blog/writing-a-good-claude-md): the WHAT/WHY/HOW frame and the 150-200 instruction ceiling
-- [josix/awesome-claude-md](https://github.com/josix/awesome-claude-md): curated real-world examples
-- [gstack's CLAUDE.md](https://github.com/garrytan/gstack/blob/main/CLAUDE.md): production example with strict writing style and commit standards
-- [What Karpathy's CLAUDE.md Misses](https://www.masteringproducthq.com/p/what-karpathys-claudemd-misses-and): useful counterpoint for non-technical use cases
 
 ## Pair this with
 
