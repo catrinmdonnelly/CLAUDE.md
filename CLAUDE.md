@@ -16,8 +16,9 @@
           tools (the default in claude.ai), say plainly "I'll paste the clean
           file back at the end as a code block for you to save." Don't offer
           a save-to-disk option you can't deliver.
-        Stop there. Do NOT ask the first content question yet. Wait for the
-        user to answer the setup questions.
+        Stop there. Do NOT ask the first content question yet AND do NOT
+        preview which section is coming next. Wait for the user to answer
+        the setup questions first.
 
      2. WALK THROUGH (turn 2 onwards). For each section below:
         - Read the HTML comment to understand what the section is for
@@ -44,9 +45,10 @@
 
 # CLAUDE.md
 
-<!-- TIP: Keep this whole file under 100 lines after you fill it in.
-     Anthropic's research: past 100 lines, Claude starts ignoring sections.
-     Past 300 lines, large parts get skipped entirely.
+<!-- TIP: Keep this file as tight as you can after filling in.
+     Anthropic's guidance and broader practitioner experience suggest that
+     the longer this gets, the more Claude skims past parts of it.
+     Roughly: under 100 lines is healthy, 300 is a soft ceiling.
      Cut anything that wouldn't change how Claude responds. -->
 
 ## Who I am
@@ -153,8 +155,10 @@ If nothing fits, say so briefly before proceeding manually.
 ## Other context files
 
 <!-- Tells Claude there are other files it should read when relevant topics
-     come up. Uses the @-import syntax. Each file mentioned should actually
-     exist in your folder, otherwise delete the line. -->
+     come up. Each file mentioned should actually exist in your folder.
+     Walk the user through this section: ask which of these files they
+     have or plan to have, and DELETE the lines that don't apply. A line
+     pointing to a file that doesn't exist is worse than no line. -->
 
 Read these when their topic comes up:
 - `@NORTH-STAR.md` for direction and big-picture decisions (only if you have multiple projects)
