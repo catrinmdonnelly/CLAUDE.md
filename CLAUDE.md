@@ -24,7 +24,7 @@
      5. When you've worked through every section, output a CLEAN version of
         the file. The clean version must:
         - Remove THIS instruction block (everything between the ═ lines above)
-        - Remove every other <!-- comment --> in the document, including the
+        - Remove every other HTML comment in the document, including the
           TIP comment near the top and the per-section explainer comments
         - Keep only the section headings and the filled-in content
         - Be ready to drop straight into the user's project folder
