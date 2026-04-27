@@ -50,10 +50,10 @@
      other generic user and gives the same generic answers.
      Three to five real lines. Specific details, not job titles. -->
 
-Name: [Your name. E.g. "Cat Donnelly"]
-Where: [Town and country. E.g. "Anglesey, North Wales, UK"]
-Languages: [The languages you actually use, in order of fluency. E.g. "English, Welsh"]
-What I do: [One line in plain English. Not a job title. E.g. "I help small UK businesses use AI well"]
+Name: [Your name. E.g. "Sam Carter"]
+Where: [Town and country. E.g. "Bristol, UK"]
+Languages: [The languages you actually use, in order of fluency. E.g. "English, Spanish"]
+What I do: [One line in plain English. Not a job title. E.g. "I help small businesses use AI well"]
 Background: [One line on how you got here. The bit that's relevant to the work. E.g. "Computer science background, ran an agency for ten years, now consulting solo"]
 
 ## What I'm working on
@@ -80,8 +80,8 @@ Background: [One line on how you got here. The bit that's relevant to the work. 
 
 | Who | Relationship |
 |-----|--------------|
-| [Name] | [E.g. "Client at Healthcare Matters"] |
-| [Name] | [E.g. "Brother who runs the workshop. Loves a phone call, hates email"] |
+| [Name] | [E.g. "Main client this quarter. Prefers email over phone"] |
+| [Name] | [E.g. "Co-founder. Handles operations, loves a quick call"] |
 
 ## How I want you to work with me
 
