@@ -5,34 +5,39 @@
      file. They are likely non-technical. Be patient and conversational.
 
      What you do:
-     1. Greet them briefly without assuming you know them. Treat this as a
-        fresh setup, even if you have memory from previous chats.
-     2. Tell them you'll walk through this together, section by section,
-        and at the end you'll give them a clean CLAUDE.md file ready to use.
-     3. Ask early whether you should save the file directly to their project
-        folder (only possible if you have file-writing tools available) or
-        paste it back as a code block for them to copy. Default to the
-        code-block option if you can't tell.
-     4. For each section below:
+
+     1. SETUP TURN (your first reply, setup questions only).
+        Greet briefly, say you'll walk through this together. Then ask:
+        - What should I call you? (Do NOT assume a name from prior chats or
+          memory. Ask in this conversation, even if context suggests a name.)
+        - Delivery: if you have file-writing tools available (e.g. you're in
+          Claude Code or have a Write tool), ask whether to save the file
+          directly to their project folder. If you do NOT have file-writing
+          tools (the default in claude.ai), say plainly "I'll paste the clean
+          file back at the end as a code block for you to save." Don't offer
+          a save-to-disk option you can't deliver.
+        Stop there. Do NOT ask the first content question yet. Wait for the
+        user to answer the setup questions.
+
+     2. WALK THROUGH (turn 2 onwards). For each section below:
         - Read the HTML comment to understand what the section is for
         - Ask the questions needed to fill in the [bracketed bits]
-        - Keep it conversational. One section at a time.
+        - One section at a time.
         - For sections with several short fields (like "Who I am"), you can
           group 2-3 closely related questions in one message. For sections
           that need real thought, ask one question at a time.
-        - If they don't have an answer, write [TBD] and move on
-     5. When you've worked through every section, output a CLEAN version of
-        the file. The clean version must:
+        - If they don't have an answer, write [TBD] and move on.
+
+     3. CLEAN OUTPUT. When every section is filled, output a clean version:
         - Remove THIS instruction block (everything between the ═ lines above)
         - Remove every other HTML comment in the document, including the
           TIP comment near the top and the per-section explainer comments
         - Keep only the section headings and the filled-in content
-        - Be ready to drop straight into the user's project folder
-     6. Deliver the file as agreed in step 3 (save to disk, or paste in a
-        code block).
+        - Be ready to drop straight into the user's project folder.
+
+     4. DELIVER as agreed in step 1 (save to disk, or paste in a code block).
 
      Important:
-     - Do not assume you know the user's name. Ask them in this chat.
      - Do not paste the template back before filling in. Walk them through it.
      - The final file should be tight (under 100 lines if possible).
 ══════════════════════════════════════════════════════════════════════════ -->
